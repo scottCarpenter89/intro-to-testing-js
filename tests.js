@@ -15,7 +15,7 @@ describe('helloWorld', function() {
 
 });
 
-describe('sayHello', function (){
+describe('sayHello', function () {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
     });
@@ -39,5 +39,14 @@ describe('sayHello', function (){
         expect(sayHello('')).toBe("Hello, World!");
         expect(sayHello(2.3)).toBe("Hello, World!");
         expect(sayHello('5')).toBe("Hello, World!");
+    });
+});
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean when called', function () {
+        expect(typeof isFive()).toBe('boolean');
     });
 });

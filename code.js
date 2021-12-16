@@ -14,5 +14,7 @@ function sayHello(name) {
  return 'Hello, ' + name + '!';
 }
 
-console.log(sayHello('5'));
+function isFive(){
+
+}
 
