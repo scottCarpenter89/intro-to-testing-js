@@ -49,4 +49,10 @@ describe('isFive', function () {
     it('should return a boolean when called', function () {
         expect(typeof isFive()).toBe('boolean');
     });
+    it('should return true when 5 is entered', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when "5" is entered', function () {
+        expect(isFive('5')).toBe(true);
+    });
 });
