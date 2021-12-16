@@ -4,6 +4,15 @@ function helloWorld() {
 }
 
 function sayHello(name) {
+    if (typeof name !== 'string'){
+        return 'Hello, World!';
+    } else if (name === ''){
+        return 'Hello, World!';
+    } else if(!isNaN(name)){
+        return 'Hello, World!';
+    }
  return 'Hello, ' + name + '!';
 }
+
+console.log(sayHello('5'));
 
