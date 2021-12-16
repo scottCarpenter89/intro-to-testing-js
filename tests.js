@@ -82,16 +82,19 @@ describe('isEven', function () {
     it('should return true if the input is -2', function () {
         expect(isEven(-2)).toBe(true);
     });
-    it('should return true if the input is 3', function () {
+    it('should return false if the input is 3', function () {
         expect(isEven(3)).toBe(false);
     });
-    it('should return true if the input is "banana"', function () {
+    it('should return false if the input is "banana"', function () {
         expect(isEven('banana')).toBe(false);
     });
     it('should return true if the input is "8"', function () {
         expect(isEven('8')).toBe(true);
     });
-    it('should return true if the input is Infinity', function () {
-        expect(isEven(Infinity)).toBe(true);
+    it('should return false if the input is Infinity', function () {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false if the input is Infinity', function () {
+        expect(isEven()).toBe(false);
     });
 });

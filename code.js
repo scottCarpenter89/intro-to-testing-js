@@ -24,10 +24,20 @@ function isFive(number){
 }
 
 function isEven(input){
-    if(input % 2 === 0) {
-        return true;
+    if (!isNaN(input)) {
+        input = Math.abs(parseInt(input));
     } else {
         return false;
     }
+    return input % 2 === 0;
+    // if(input % 2 === 0) {
+    //     return true;
+    // } else if (input === Infinity) {
+    //     return false;
+    // } else if (typeof input === 'boolean') {
+    //     return false;
+    // } else {
+    //     return false;
+    // }
 }
 
