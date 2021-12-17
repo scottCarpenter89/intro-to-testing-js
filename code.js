@@ -42,6 +42,11 @@ function isEven(input){
 }
 
 function isVowel(input) {
+    if (typeof input !== 'string') {
+        return false;
+    } else {
+        input = input.toLowerCase();
+    }
     switch (input){
         case 'a':
              return true;
@@ -61,9 +66,14 @@ function isVowel(input) {
         case 'y':
             return true;
             break;
+        case undefined:
+            return false;
+            break;
         default:
             return false;
             break;
     }
-    // return true || false;
+
 }
+
+console.log(isVowel('A'));

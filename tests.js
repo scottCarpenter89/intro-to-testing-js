@@ -109,19 +109,22 @@ describe('isVowel', function () {
     it('should return true if the input is "a"', function () {
         expect(isVowel('a')).toBe(true);
     });
-    it('should return true if the input is "y"', function () {
-        expect(typeof isVowel('')).toBe(true);
+    it('should return true if the input is "A"', function () {
+        expect(isVowel('A')).toBe(true);
     });
-    // it('should return a boolean if called', function () {
-    //     expect(typeof isVowel()).toBe('boolean');
-    // });
-    // it('should return a boolean if called', function () {
-    //     expect(typeof isVowel()).toBe('boolean');
-    // });
-    // it('should return a boolean if called', function () {
-    //     expect(typeof isVowel()).toBe('boolean');
-    // });
-    // it('should return a boolean if called', function () {
-    //     expect(typeof isVowel()).toBe('boolean');
-    // });
+    it('should return true if the input is "y"', function () {
+        expect(isVowel('y')).toBe(true);
+    });
+    it('should return false if the input is 4', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false if the input is true', function () {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('should return false if the input is false', function () {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false if the input is "banana"', function () {
+        expect(isVowel('banana')).toBe(false);
+    });
 });
