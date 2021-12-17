@@ -146,6 +146,6 @@ describe('add', function () {
         expect(add('-4', 10)).toBe(6);
     });
     it('should return NaN when "banana" and "split" are input', function () {
-        expect(add('banana', 'split')).toBe(false);
+        expect(add('banana', 'split')).toBeNaN();
     });
 });

@@ -82,7 +82,7 @@ function add(num1, num2) {
         let num2Parsed = parseInt(num2);
         return num1Parsed + num2Parsed;
     } else if (isNaN(num1.NaN) || isNaN(num2.NaN)) {
-        return !NaN;
+        return NaN;
     }
 
 }
