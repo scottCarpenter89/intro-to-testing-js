@@ -81,10 +81,10 @@ function add(num1, num2) {
         let num1Parsed = parseInt(num1);
         let num2Parsed = parseInt(num2);
         return num1Parsed + num2Parsed;
-    } else if (isNaN(num1.NaN) || isNaN(num2.NaN)) {
+    } else if (typeof num1 !== 'number' || typeof num2 !== 'number')
         return NaN;
-    }
-
 }
 
 console.log(add('banana', 'split'));
+console.log(add(2, 'apples'));
+console.log(undefined === undefined);
