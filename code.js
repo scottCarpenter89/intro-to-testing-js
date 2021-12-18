@@ -76,15 +76,11 @@ function isVowel(input) {
 
 }
 
-function add(num1, num2) {
-    if (!isNaN(num1) && !isNaN(num2)) {
-        let num1Parsed = parseInt(num1);
-        let num2Parsed = parseInt(num2);
-        return num1Parsed + num2Parsed;
-    } else if (typeof num1 !== 'number' || typeof num2 !== 'number')
+function add(input1, input2) {
+    if (!isNaN(input1) && !isNaN(input2)) {
+        return parseInt(input1) + parseInt(input2);
+    } else {
         return NaN;
+    }
 }
 
-console.log(add('banana', 'split'));
-console.log(add(2, 'apples'));
-console.log(undefined === undefined);
